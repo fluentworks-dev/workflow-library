@@ -100,6 +100,8 @@ namespace (no `..`). Markdown bodies are copied as written, trimmed of surroundi
 | `agent` | yes | The key of the agent under `agents/` that runs it. Several workflows may share one agent. Duplicating a workflow copies its agent each time. |
 | `model` | no | `inherit` (the member's Settings default, the default), an alias such as `opus` or `sonnet`, or a full model ID. |
 | `permissions` | no | `auto` (the default) or `ask`. Auto needs a model that can run it. |
+| `effort` | no | `inherit` (Claude Code decides, the default) or a level: `low`, `medium`, `high`, `xhigh` or `max`. An app that does not know a level still reads the library, shows the level as written, and asks to be updated before it duplicates the workflow. |
+| `takes` | no | The ticket types the workflow takes, as a list of type ids: `"task"`, `"spike"`. Columns running the workflow take only these, for example `"takes": ["spike"]`. Leave it out to take every type. An app ignores an id it does not know, and reads a list with no id it knows as every type. |
 | `stages` | yes | At least one, in order. Each stage's Markdown says what the agent does in it. |
 
 ### agents/&lt;agent&gt;/agent.json
