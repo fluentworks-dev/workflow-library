@@ -1,0 +1,16 @@
+{
+  "name": "Code Design Workflow",
+  "description": "Design how the code is organized to deliver the scope and the designs: the concepts and their names, the interfaces, where each thing lives and how it will change over time, as simple and intuitive as it can be, then the tasks to build it. Produces code-design.md. Writes no production code.",
+  "agent": "software-engineer",
+  "model": "opus",
+  "permissions": "auto",
+  "stages": [
+    {"name": "Ground in the code", "file": "stages/1-ground-in-the-code.md"},
+    {"name": "Model the concepts", "file": "stages/2-model-the-concepts.md"},
+    {"name": "Design the interfaces", "file": "stages/3-design-the-interfaces.md"},
+    {"name": "Shape the types, the structure and the values", "file": "stages/4-shape-the-types-the-structure-and-the-values.md"},
+    {"name": "Decide failure behavior and the proof", "file": "stages/5-decide-failure-behavior-and-the-proof.md"},
+    {"name": "Plan the tasks", "file": "stages/6-plan-the-tasks.md"},
+    {"name": "Write code-design.md", "file": "stages/7-write-code-design-md.md"}
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Software Merge Workflow",
+  "description": "Get the pull request into good shape and into the default branch: read the record, bring the branch up to date, make every pre-merge condition true, clear the prerequisites and their order, merge, confirm the default branch is healthy, then finish the follow-ups, hand the person their exact steps and clean up. Moving the ticket into this workflow is the approval to merge.",
+  "agent": "release-engineer",
+  "model": "sonnet",
+  "permissions": "auto",
+  "stages": [
+    {
+      "name": "Read the record and set the order",
+      "file": "stages/1-read-the-record-and-set-the-order.md"
+    },
+    {
+      "name": "Bring the branch up to date and recheck what came in",
+      "file": "stages/2-bring-the-branch-up-to-date-and-recheck-what-came-in.md"
+    },
+    {
+      "name": "Run the pre-merge checklist",
+      "file": "stages/3-run-the-pre-merge-checklist.md"
+    },
+    {
+      "name": "Clear the prerequisites",
+      "file": "stages/4-clear-the-prerequisites.md"
+    },
+    {
+      "name": "Merge and watch the default branch",
+      "file": "stages/5-merge-and-watch-the-default-branch.md"
+    },
+    {
+      "name": "Finish the follow-ups",
+      "file": "stages/6-finish-the-follow-ups.md"
+    },
+    {
+      "name": "Clean up and write the merge notes",
+      "file": "stages/7-clean-up-and-write-the-merge-notes.md"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Scoping Workflow",
+  "description": "Decide whether the ticket is worth building and exactly what it covers: who it is for, the business value and the observable output that justify it, what is in and out, what it must never do, the systems and consumers it touches, and its size. Produces scope.md. Writes no design and no code.",
+  "agent": "product-manager",
+  "model": "opus",
+  "permissions": "auto",
+  "stages": [
+    { "name": "Understand the request", "file": "stages/1-understand-the-request.md" },
+    { "name": "Trace the cause behind a symptom", "file": "stages/2-trace-the-cause-behind-a-symptom.md" },
+    { "name": "Decide what is worth building", "file": "stages/3-decide-what-is-worth-building.md" },
+    { "name": "Settle the scope", "file": "stages/4-settle-the-scope.md" },
+    { "name": "Write the outcomes", "file": "stages/5-write-the-outcomes.md" },
+    { "name": "Map the extent", "file": "stages/6-map-the-extent.md" },
+    { "name": "Size and slice the work", "file": "stages/7-size-and-slice-the-work.md" },
+    { "name": "Write scope.md", "file": "stages/8-write-scope-md.md" },
+    { "name": "Check it and hand off", "file": "stages/9-check-it-and-hand-off.md" }
+  ]
+}

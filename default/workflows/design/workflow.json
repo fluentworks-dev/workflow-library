@@ -1,0 +1,16 @@
+{
+  "name": "Product Design Workflow",
+  "description": "Design how a user will use what this ticket adds or changes: who it is for, what using it looks like, the few things they must know, then every surface, state, word and graphic they meet, with or without a screen. Simple, intuitive, the least work for the user, pleasing to look at and consistent with the design system. Produces one interactive design file that shows the product design, and product-design.md.",
+  "agent": "ui-designer",
+  "model": "opus",
+  "permissions": "auto",
+  "stages": [
+    { "name": "Understand the user and what exists", "file": "stages/1-understand-the-user-and-what-exists.md" },
+    { "name": "Design how it is used", "file": "stages/2-design-how-it-is-used.md" },
+    { "name": "Walk the user's path", "file": "stages/3-walk-the-users-path.md" },
+    { "name": "Design every state and write every word", "file": "stages/4-design-every-state-and-write-every-word.md" },
+    { "name": "Build the design file", "file": "stages/5-build-the-design-file.md" },
+    { "name": "Check it as the user", "file": "stages/6-check-it-as-the-user.md" },
+    { "name": "Hand off", "file": "stages/7-hand-off.md" }
+  ]
+}

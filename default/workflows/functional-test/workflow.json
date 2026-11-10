@@ -1,0 +1,37 @@
+{
+  "name": "Software Validation Workflow",
+  "description": "Prove the change works by running it for real. Runs the whole check set once with counts against the parent commit (the builder and the reviewer run only the tests of what they changed), chooses the most realistic way to exercise this particular change, runs it live, probes where it could break, fixes what fails, makes sure the tests run where merges are gated, and reports what was seen with counts. Marks the pull request ready when its checks are green.",
+  "agent": "qa-engineer",
+  "model": "opus",
+  "permissions": "auto",
+  "stages": [
+    {
+      "name": "Gather the promises",
+      "file": "stages/1-gather-the-promises.md"
+    },
+    {
+      "name": "Choose how to prove it",
+      "file": "stages/2-choose-how-to-prove-it.md"
+    },
+    {
+      "name": "Run it live",
+      "file": "stages/3-run-it-live.md"
+    },
+    {
+      "name": "Probe where it breaks",
+      "file": "stages/4-probe-where-it-breaks.md"
+    },
+    {
+      "name": "Fix what fails",
+      "file": "stages/5-fix-what-fails.md"
+    },
+    {
+      "name": "Gate on the checks",
+      "file": "stages/6-gate-on-the-checks.md"
+    },
+    {
+      "name": "Report what you saw",
+      "file": "stages/7-report-what-you-saw.md"
+    }
+  ]
+}

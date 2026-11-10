@@ -1,0 +1,33 @@
+{
+  "name": "Software Implementation Workflow",
+  "description": "Build the change as designed: test first, one commit per task, the smallest change that delivers the scope, in the repository's own style. Runs each task's own test and leaves the gate to CI and Software Validation; opens a draft pull request with an honest test plan.",
+  "agent": "software-engineer",
+  "model": "opus",
+  "permissions": "auto",
+  "stages": [
+    {
+      "name": "Understand and prepare",
+      "file": "stages/1-understand-and-prepare.md"
+    },
+    {
+      "name": "Load the patterns of the stack",
+      "file": "stages/2-load-the-patterns-of-the-stack.md"
+    },
+    {
+      "name": "Build task by task",
+      "file": "stages/3-build-task-by-task.md"
+    },
+    {
+      "name": "Read your own diff",
+      "file": "stages/4-read-your-own-diff.md"
+    },
+    {
+      "name": "Verify the whole change",
+      "file": "stages/5-verify-the-whole-change.md"
+    },
+    {
+      "name": "Ship a draft",
+      "file": "stages/6-ship-a-draft.md"
+    }
+  ]
+}
