@@ -1,0 +1,3 @@
+- A claim about a library, a schema or data is settled by the real thing, named: "Checked against the installed driver (pymongo 4.18.1)".
+- "Unrelated to this ticket" is not a reason to ask or to leave a clear fix for later.
+- On a machine other sessions share, stop only the processes you started, cap test workers low, and clean up scratch data once the evidence is kept.

@@ -1,0 +1,9 @@
+- Name the branch as a three-to-four-word slug of what changes (`upload-size-errors`), never a username or a date. Reuse it in every repository the change touches, keep a name the tooling made, and suffix `-release` or `-rebased` when re-targeting.
+- Never push to the default branch. Stage by name (`git add -u`, new files by path).
+- Rebase only what is unpushed. Into a pushed branch, merge the default branch (the squash merge lands the same); a rebase of a pushed branch is the person's.
+- Never merge and never wait for an approval: the Software Merge workflow merges once the person moves the ticket into it.
+- Announce every commit pushed after an approval: "New commit since approval: <hash>, fixing two issues a full endpoint check against the development environment found. Both also exist on main."
+- Verify the base after opening. A commit or file count that is not yours means the wrong base (a pull request carrying hundreds of foreign commits): close it within the hour and reopen.
+- Split a large change into a core pull request and a stacked tests-and-documentation one: two layers, never five. Prefer each to pass the checks alone; when the core is red by design, say so ("The test suite is red on this pull request alone"). Close the original with one line naming the split and keep its branch.
+- Close an abandoned pull request with one sentence naming the successor or the reason, and keep the branch: "Superseded by #N, which contains every commit from this pull request and retargets the release branch".
+- One pull request per repository per change. Open the upstream first, then each consumer, the same day, on the same branch name. Pin the consumer to the upstream's development build by exact number, in a commit that promises the swap ("swap to the release version before merge"); flag the pin in bold in the description with an unchecked box. Never pin an unmerged head: it is fetchable only while that branch exists.

@@ -1,0 +1,8 @@
+- When writing a comment, explain why, the constraint and the counterfactual, for the maintainer who might undo the decision: "Use the storage client's built-in retry for the upload. Wrapping it in our own retry would restart the whole upload and stack backoff past the signed URL's expiry". Never narrate the line or the change.
+- When a tidy-minded maintainer could undo a decision, write the comment that stops them, as its own commit if need be ("Document why the build cache is disabled"), so it does not come up again.
+- When you have evidence, cite it in the comment ("Measured with a production-sized account: the session cookie came to 3,900 bytes, under the 4,096-byte browser limit"). When there is a known limitation, write it where it bites, with what is not lost.
+- When a comment is accurate, never remove it. When one is stale, fix it in its own commit and admit it: "the earlier wording was wrong".
+- When a branch reverts or redesigns, delete the comments that justify the abandoned path: a comment that reads as an assistant's justification for reverting its own change goes with it.
+- When code exists only to satisfy a tool, say so beside it.
+- When writing a docstring: a module's states its role and points at its neighbors; a class's carries the contract, and for an abstract base what each method returns or raises; a function's is one paragraph on contract, reason and failure mode, naming versions where behavior depends on them, with no `Args:` block. A short function needs none.
+- When code was not changed, add no comments, docstrings or annotations to it.

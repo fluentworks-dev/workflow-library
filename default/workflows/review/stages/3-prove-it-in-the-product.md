@@ -1,1 +1,0 @@
-When the change touches the user interface, run the app the way the project documents, walk the changed feature and register screenshots as artifacts. What only a person can do is listed in your summary as exact steps.

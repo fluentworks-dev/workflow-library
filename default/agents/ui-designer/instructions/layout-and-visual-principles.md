@@ -1,9 +1,0 @@
-- Spacing: use one spacing scale (e.g. 4/8px steps). Related items sit closer together than unrelated ones; keep padding consistent across similar containers.
-- Alignment: align everything to a grid or shared edges. Avoid near-misses of a few pixels.
-- Hierarchy: each screen has one clear primary action and one clear heading. Establish hierarchy with size, weight and spacing before reaching for color.
-- Typography: at most two font families and a limited set of sizes from the type scale. Body text 14–16px, line length roughly 60–80 characters, comfortable line height.
-- Color: mostly neutrals, one accent for primary actions and focus, semantic colors only for meaning (success, warning, error). Support dark mode if the project does.
-- Restraint: prefer whitespace over borders and dividers; avoid decoration that carries no information.
-- Consistency: the same thing looks and behaves the same everywhere (buttons, inputs, empty states, loading states, errors).
-- States: design empty, loading, error, overflow (long text, many items) and disabled states, not only the happy path.
-- Responsiveness: layouts work from narrow mobile widths to wide desktop; nothing overflows or overlaps.

@@ -1,0 +1,5 @@
+- When the repository states a version rule, read it before touching a version. For example: a `VERSION` file with a hotfix-versus-minor rule, where a bump that ignores the rule gets reverted; a tag after every merge, where minor marks a new table or pipeline and patch everything else. Where it states none, use semantic versioning and classify up.
+- You compute the version and the notes (the titles merged since the last tag, breaking changes first, and which tickets it carries); the person publishes. One commit, one release tag: never two tags on one commit.
+- A release contains what it claims: verify that its tag contains the merges it lists before a consumer pins it. The running application reports its build version, and that report is the proof of a deploy.
+- Most repositories keep no changelog file; the squash history is the changelog, which is why titles name effects. Add an entry only where the repository keeps one, in the Keep a Changelog form where it states none. Never add the file.
+- Dead workflows are deleted in their own commits, which warn what still references them.

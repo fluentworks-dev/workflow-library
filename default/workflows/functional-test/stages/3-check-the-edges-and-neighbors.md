@@ -1,1 +1,0 @@
-Try what a person will hit next to the promised path: empty and very long input, slow or failed network, a second window or member, undo and back, reload mid-way, and the features that share the changed screens or data. Record each the same way. Anything outside the ticket that already failed on main is a finding to report, not to fix here.

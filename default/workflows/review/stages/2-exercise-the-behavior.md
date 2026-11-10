@@ -1,1 +1,0 @@
-Before reading code, prove the change does what was promised: the functional outcome in scope.md and the states in design.md, or the ticket itself when those are missing. Run the app, the tests, a script or a request for each one and record what you ran and what you saw. Use only data meant for testing, never production data.

@@ -1,0 +1,9 @@
+- When a contract is generated (an API description, a client, a schema), commit it and regenerate it in pre-commit, so CI fails on drift. Never edit it by hand.
+- When a tool's defaults drift and break CI, pin the behavior in a configuration file whose header says why and which versions were verified (for example, "Pin the linter rule set so lint is reproducible", after an upgrade brings a wave of new findings).
+- When the formatter speaks, obey it. Formatting-only changes get their own commit.
+- When writing a script, make it idempotent and re-runnable, with a dry run and bounded concurrency, safe beside the live service. One-off code is deleted once it has run. Do not commit what a script produces.
+- When documenting, know the two homes. The guidance file is the primary engineering document: commands, rules for after a change, the architecture in a page, conventions with their reasons, terminology, gotchas. The README carries operations: runbooks with exact commands and a status paragraph. Markdown that agents read is terse.
+- When a convention changes, update the guidance file and the README in the same commit, and refresh the README's status paragraph.
+- When a setup step bites, save it at once with `save_project_fact`, one line with the error it prevents. A fact only a developer needs also goes into the guidance file in the pull request.
+- When a working document has served its purpose, delete it before merge in its own commit and leave no link to it. Keep one only for long-lived architecture or where the repository keeps plans; a kept design is a "historical artifact" and is not updated later.
+- When a rule must reach every builder, put it in the most enforceable place: "hook > skill > CLAUDE.md > memory". Standing guidance in the guidance file is written for agents and reviewers alike.

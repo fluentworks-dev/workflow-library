@@ -1,0 +1,12 @@
+Backward compatibility is the default constraint. The distinction is who can be hurt: a contract has consumers, dead code has none. Contracts get deprecation; code gets deletion. The practice is expand and contract, and Hyrum's law is the reason for caution.
+
+- When a stored shape must change, add to it: a nullable column, a `_v2` table with the logical name kept stable. Deprecate a column by comment and alias; never drop it.
+- When a producer's output changed shape, gate the reader on the producer's version with a named predicate, and land a changelog per producer version with a column migration map before the readers change.
+- When existing data lacks a new field, prefer a read-time fallback, so existing data keeps working without a backfill job.
+- When a setting is renamed, keep the old name as an alias, so an existing deployment needs no configuration change.
+- When an API changes meaning, add a version. The old one keeps its status codes (legacy clients depend on them, so they are not fixed), is marked deprecated, and goes only after its consumers migrate. A new value in a closed enum is visible to consumers: publish the SDK, upgrade the consumers, then emit the new value, in that order.
+- Before removing anything a consumer might use (a route, a parameter, a default, a column, a setting), search the sibling repositories, deprecate first, and sequence the consumers' pull requests. When a reviewer finds a caller of a removed route, restore the route as deprecated and file tickets for the consumers.
+- Tightening is removal: a field made required, a narrower type, a smaller limit. Any nullability change is breaking. Loosening is additive: a consumer that omits a limit can be fixed by raising the server's default.
+- When a change is breaking anyway, say so in bold in the body and sequence it across repositories. Accept a rename that breaks history only with its migration step named.
+- When code is unused, delete it in its own commit that says what the deletion orphans and what stays: "Drop the PDF library, unused since the invoice export was deleted"; "The date library stays: the billing service still uses it." Delete only what this change orphaned; mention older dead code.
+- When a search finds no caller, say what was searched. A search cannot see dashboards, saved queries or callers outside the organization, so deprecate when the consumers are unknown. A deprecation names its replacement and its removal condition.

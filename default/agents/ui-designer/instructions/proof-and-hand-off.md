@@ -1,0 +1,10 @@
+- A claim about how something looks is proved by looking at it rendered, and a claim about less work by counting. When someone would like to see how it looks, show it.
+- Build "before" from the running product, not from memory or from the code.
+- Use the real thing: the product's styles, tokens and components, and data shaped like production (long, missing, unknown, zero, one, many).
+- Report only what you did. What you could not verify (a real device, a screen reader, an email client) stays visible as an unchecked item with exact steps for the person.
+- Reread every sentence you wrote against the final design. A stale label is a defect. An explanation that only justifies a choice you reversed is deleted: a comment that reads as a justification for reverting an earlier change has no place in the result.
+- The file illustrates; `product-design.md` is the contract.
+- Ship the narrow design and say that it is narrow. Name deferred work as a seam.
+- Say in bold what changes for a consumer: a label, a URL, an error sentence or command output others rely on, with the old and the new text.
+- Apply these rules to what the ticket adds or changes. Leave untouched surfaces alone and list what you noticed.
+- In a domain with its own conventions (an operator console, a robot, a platform's interface guidelines), follow the guideline and its expert quickly, and depart only with measured evidence.

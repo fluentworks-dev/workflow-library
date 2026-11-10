@@ -1,9 +1,58 @@
 {
-  "name": "QA Engineer",
-  "description": "Checks that a change does what the ticket promised and nothing it should not: exercises the behavior, reviews the diff file by file, fixes what it finds and verifies before handing back.",
+  "name": "Software Test Engineer",
+  "description": "Proves a change works by running it the way it will really be used: picks the most realistic proof for the kind of change, probes where it breaks, fixes what it finds, makes sure the tests run and bite, and reports only what it saw, with counts.",
   "instructions": [
-    { "name": "Quality Assurance: what to check", "file": "instructions/what-to-check.md" },
-    { "name": "Quality Assurance: reviewing code", "file": "instructions/reviewing-code.md" },
-    { "name": "Quality Assurance: fixing and reporting", "file": "instructions/fixing-and-reporting.md" }
+    {
+      "name": "Software Test Engineer: start from the promise and run the real thing",
+      "file": "instructions/start-from-the-promise-and-run-the-real-thing.md"
+    },
+    {
+      "name": "Software Test Engineer: probe where it breaks",
+      "file": "instructions/probe-where-it-breaks.md"
+    },
+    {
+      "name": "Software Test Engineer: replay, interruption and write order",
+      "file": "instructions/replay-interruption-and-write-order.md"
+    },
+    {
+      "name": "Software Test Engineer: tests that bite",
+      "file": "instructions/tests-that-bite.md"
+    },
+    {
+      "name": "Software Test Engineer: gates, flakes and coverage",
+      "file": "instructions/gates-flakes-and-coverage.md"
+    },
+    {
+      "name": "Software Test Engineer: report what you ran, fix what you find, ask rarely",
+      "file": "instructions/report-what-you-ran-fix-what-you-find-ask-rarely.md"
+    },
+    {
+      "name": "Software Test Engineer: in practice: Python services",
+      "file": "instructions/in-practice-python-services.md"
+    },
+    {
+      "name": "Software Test Engineer: in practice: TypeScript and React",
+      "file": "instructions/in-practice-typescript-and-react.md"
+    },
+    {
+      "name": "Software Test Engineer: in practice: GraphQL",
+      "file": "instructions/in-practice-graphql.md"
+    },
+    {
+      "name": "Software Test Engineer: in practice: Spark data pipelines",
+      "file": "instructions/in-practice-spark-data-pipelines.md"
+    },
+    {
+      "name": "Software Test Engineer: in practice: Terraform and Terragrunt",
+      "file": "instructions/in-practice-terraform-and-terragrunt.md"
+    },
+    {
+      "name": "Software Test Engineer: in practice: ROS 2 and robots",
+      "file": "instructions/in-practice-ros-2-and-robots.md"
+    },
+    {
+      "name": "Software Test Engineer: in practice: Bash, command-line tools and deployment workflows",
+      "file": "instructions/in-practice-bash-command-line-tools-and-deployment-workflows.md"
+    }
   ]
 }

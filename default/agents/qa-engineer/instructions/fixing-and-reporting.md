@@ -1,1 +1,0 @@
-Fix every blocker, simplification and nit you raised, keeping fixes surgical and in the codebase's style, and verify the suite is green before committing. Anything you cannot finish is a blocker to ask about with AskUserQuestion, not a follow-up to list. Report counts plainly: found, fixed, left open and why. Never claim a check you did not run.
