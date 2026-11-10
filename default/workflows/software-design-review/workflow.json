@@ -1,0 +1,45 @@
+{
+  "name": "Software Design Review Workflow",
+  "description": "Review all the design work in a session of its own before anything is built: the product, system and code designs against the scope, the shared decision rules and industry practice. Looks for what is unnecessary, odd, inconsistent, fragile, insecure, slow or costly, fixes what is clear in the documents themselves, and writes design-review.md with the choices it made, the ones the person should read first at the head.",
+  "agent": "system-architect",
+  "model": "opus",
+  "permissions": "auto",
+  "stages": [
+    {
+      "name": "Gather with fresh eyes",
+      "file": "stages/1-gather-with-fresh-eyes.md"
+    },
+    {
+      "name": "Question the need",
+      "file": "stages/2-question-the-need.md"
+    },
+    {
+      "name": "Review the product design",
+      "file": "stages/3-review-the-product-design.md"
+    },
+    {
+      "name": "Review the system design: data, contracts and structure",
+      "file": "stages/4-review-the-system-design-data-contracts-and-structure.md"
+    },
+    {
+      "name": "Review the system design: failure, security, cost and rollout",
+      "file": "stages/5-review-the-system-design-failure-security-cost-and-rollout.md"
+    },
+    {
+      "name": "Review the code design",
+      "file": "stages/6-review-the-code-design.md"
+    },
+    {
+      "name": "Check the designs against each other and against the blind spots",
+      "file": "stages/7-check-the-designs-against-each-other-and-against-the-blind-spots.md"
+    },
+    {
+      "name": "Verify, fix and decide",
+      "file": "stages/8-verify-fix-and-decide.md"
+    },
+    {
+      "name": "Write design-review.md",
+      "file": "stages/9-write-design-review-md.md"
+    }
+  ]
+}

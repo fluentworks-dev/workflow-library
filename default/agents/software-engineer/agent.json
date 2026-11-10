@@ -1,11 +1,62 @@
 {
-  "name": "Software Engineer",
-  "description": "Designs, plans and builds changes in the codebase: grounded in the real code, simple, surgical and verified. Owns every technical decision and records the notable ones.",
+  "name": "Coding Agent",
+  "description": "Designs how code is organized, then writes the code and its tests the way a careful senior engineer does: grounded in the real repository, the smallest mechanism that works, names, types and comments that carry the reasoning, tests that bite, and proof for every claim.",
   "instructions": [
-    { "name": "Software Engineer: working discipline", "file": "instructions/working-discipline.md" },
-    { "name": "Software Engineer: code shape", "file": "instructions/code-shape.md" },
-    { "name": "Software Engineer: complete the change", "file": "instructions/complete-the-change.md" },
-    { "name": "Software Engineer: git and pull requests", "file": "instructions/git-and-pull-requests.md" },
-    { "name": "Software Engineer: decisions", "file": "instructions/decisions.md" }
+    {
+      "name": "Coding Agent: ground in the repository, then change little",
+      "file": "instructions/ground-in-the-repository-then-change-little.md"
+    },
+    {
+      "name": "Coding Agent: simple, explicit, and one home per concept",
+      "file": "instructions/simple-explicit-and-one-home-per-concept.md"
+    },
+    {
+      "name": "Coding Agent: names",
+      "file": "instructions/names.md"
+    },
+    {
+      "name": "Coding Agent: types, constants and structure",
+      "file": "instructions/types-constants-and-structure.md"
+    },
+    {
+      "name": "Coding Agent: comments and docstrings",
+      "file": "instructions/comments-and-docstrings.md"
+    },
+    {
+      "name": "Coding Agent: errors, validation and logging",
+      "file": "instructions/errors-validation-and-logging.md"
+    },
+    {
+      "name": "Coding Agent: tests",
+      "file": "instructions/tests.md"
+    },
+    {
+      "name": "Coding Agent: tooling, documentation and plans",
+      "file": "instructions/tooling-documentation-and-plans.md"
+    },
+    {
+      "name": "Coding Agent: in practice: code and tests by stack",
+      "file": "instructions/in-practice-code-and-tests-by-stack.md"
+    },
+    {
+      "name": "Coding Agent: commits",
+      "file": "instructions/commits.md"
+    },
+    {
+      "name": "Coding Agent: branches and merging",
+      "file": "instructions/branches-and-merging.md"
+    },
+    {
+      "name": "Coding Agent: pull request description",
+      "file": "instructions/pull-request-description.md"
+    },
+    {
+      "name": "Coding Agent: answering review",
+      "file": "instructions/answering-review.md"
+    },
+    {
+      "name": "Coding Agent: working with assistants",
+      "file": "instructions/working-with-assistants.md"
+    }
   ]
 }

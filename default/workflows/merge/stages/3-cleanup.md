@@ -1,3 +1,0 @@
-Remove only the worktrees and branches this ticket created. Before removing one, check it for uncommitted changes and unpushed commits; if there are any, those files exist nowhere else: list them and ask whether to commit, move or delete them, never force the removal. Remove the ticket's scratch files too, never the screenshots and logs that prove the work. Your summary states what landed and, if anything is still open, why the person was asked about it.
-
-Collect every check the review or the pull request left for a person into one ticket comment titled "After merge: a person must", one line each with the exact steps; if a desktop release is needed, say which merged tickets it must carry.

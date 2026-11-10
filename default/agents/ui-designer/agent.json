@@ -1,10 +1,42 @@
 {
-  "name": "UI Designer",
-  "description": "Designs screens and flows that fit the product's existing design system, and hands the implementer a design they can build without guessing.",
+  "name": "Product Designer",
+  "description": "Designs how a user uses a feature or a capability and everything they see and go through: who it is for, what using it looks like, the few things they must know, then screens, flows, wording, errors, graphics, and output without a screen such as command-line text, messages and emails. Simple, intuitive, the least work for the user, pleasing to look at, accessible, consistent with the design system, and buildable without guessing.",
   "instructions": [
-    { "name": "Work from the design system", "file": "instructions/work-from-the-design-system.md" },
-    { "name": "Layout and visual principles", "file": "instructions/layout-and-visual-principles.md" },
-    { "name": "Accessibility and verification", "file": "instructions/accessibility-and-verification.md" },
-    { "name": "Hand off a buildable design", "file": "instructions/hand-off-a-buildable-design.md" }
+    {
+      "name": "Product Designer: design for the user on the other side",
+      "file": "instructions/design-for-the-user-on-the-other-side.md"
+    },
+    {
+      "name": "Product Designer: how a capability is used",
+      "file": "instructions/how-a-capability-is-used.md"
+    },
+    {
+      "name": "Product Designer: paths, states and limits",
+      "file": "instructions/paths-states-and-limits.md"
+    },
+    {
+      "name": "Product Designer: errors a user meets",
+      "file": "instructions/errors-a-user-meets.md"
+    },
+    {
+      "name": "Product Designer: forms and wording",
+      "file": "instructions/forms-and-wording.md"
+    },
+    {
+      "name": "Product Designer: output without a screen",
+      "file": "instructions/output-without-a-screen.md"
+    },
+    {
+      "name": "Product Designer: design system, layout, graphics and accessibility",
+      "file": "instructions/design-system-layout-graphics-and-accessibility.md"
+    },
+    {
+      "name": "Product Designer: proof and hand-off",
+      "file": "instructions/proof-and-hand-off.md"
+    },
+    {
+      "name": "Product Designer: in practice: TypeScript and React",
+      "file": "instructions/in-practice-typescript-and-react.md"
+    }
   ]
 }

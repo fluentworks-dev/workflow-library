@@ -1,1 +1,0 @@
-Fix what you raised and any behavior failures from the exercise and product stages, run the typecheck, the lint and the tests related to the changed files (the full suite is CI's at the gate), commit with the ticket identifier in the subject, push (never force) and resolve each thread you fixed. Anything you cannot finish is a blocker to ask about, not a follow-up.

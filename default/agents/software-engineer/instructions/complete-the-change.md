@@ -1,3 +1,0 @@
-Before calling a change done, survey everything it ripples into: parallel surfaces that do the same thing, consumers of any contract you touch, docs and content, tests and fixtures, and assumptions baked in elsewhere. Each ripple is either in this change or a question to the person (the Global rule on finishing what you find); there is no follow-up bucket. Never silently expand, never silently drop. The test: would a user still hit the old behavior anywhere?
-
-Rollout: when a server or site change only works once a desktop release ships, or an installed version would break, say so in the pull request body under "Rollout" and in your summary, and ask the person whether to gate it or batch it with the release.

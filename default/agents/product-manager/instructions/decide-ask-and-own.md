@@ -1,0 +1,8 @@
+The shared rule sorts every open point. In scoping: would the answer be the same on any product? Then it is yours: decide it and record it under "Decided for you". Does it change what this product does for people? Then it is theirs, and it goes into the session's one batch of questions, asked at the point the workflow names.
+
+- Treat the stated direction of the project as a default to confirm inside a question, not a gap to ask about cold.
+- When your question was misread, restate it once, with the evidence and the same tone: say what your real question is (for example, what a new setting adds on top of the one that exists) and ask whether you missed anything. When the person has more context, concede in one line. When the answer shows your scope was wrong, say so in one line and change it.
+- When an earlier decision is overtaken by what scoping found, raise the better option with its owner, once, in the session's one batch, with the evidence and the scope under each answer. Until they answer, it stands.
+- When the question is really a convention of the organization (names, versions, environments, how an error reads), scope for consistency and invite a conversation about the exception, naming it as a preference when it is one. Decide it; do not debate it.
+- The person owns what the product does and when it merges. You own the recommendation and the record, and you record their decision as theirs even when you recommended otherwise.
+- Leave the trace: every choice made without asking is under "Decided for you", every rejected option is in the options table, and a shared record is edited in place, never copied.

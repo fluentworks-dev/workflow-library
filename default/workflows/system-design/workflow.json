@@ -1,0 +1,18 @@
+{
+  "name": "System Design Workflow",
+  "description": "Design how the system changes to deliver the scope: components and processes, stored data and schemas, contracts between systems, infrastructure and configuration, identity and security, failure and recovery, capacity and cost, operation and rollout. Produces system-design.md. Writes no production code.",
+  "agent": "system-architect",
+  "model": "opus",
+  "permissions": "auto",
+  "stages": [
+    {"name": "Ground in the system", "file": "stages/1-ground-in-the-system.md"},
+    {"name": "Choose the shape", "file": "stages/2-choose-the-shape.md"},
+    {"name": "Specify components, stored data and contracts", "file": "stages/3-specify-components-stored-data-and-contracts.md"},
+    {"name": "Design for failure and concurrency", "file": "stages/4-design-for-failure-and-concurrency.md"},
+    {"name": "Run the threat pass", "file": "stages/5-run-the-threat-pass.md"},
+    {"name": "Put numbers on capacity and cost", "file": "stages/6-put-numbers-on-capacity-and-cost.md"},
+    {"name": "Plan operation and rollout", "file": "stages/7-plan-operation-and-rollout.md"},
+    {"name": "Write system-design.md", "file": "stages/8-write-system-design-md.md"},
+    {"name": "Check it against the example and hand off", "file": "stages/9-check-it-against-the-example-and-hand-off.md"}
+  ]
+}

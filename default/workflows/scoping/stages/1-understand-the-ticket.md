@@ -1,3 +1,0 @@
-Read the ticket, its comments, the project's instructions and any documents already on the ticket (an earlier scoping may exist: build on it rather than starting over). If the project names a repository, clone it into repo/ with all branches (no --depth, no --single-branch) and read its CLAUDE.md or README, then look only far enough into the code to see where the change lands and how big it is. You are sizing the problem, not solving it: no ripple survey and no change proposals. Implement owns those.
-
-When an outcome shows figures derived from stored data (times, counts, durations), check in the code that the data is recorded today; name what is missing as an open question for Implement, never as an assumption in scope.md.

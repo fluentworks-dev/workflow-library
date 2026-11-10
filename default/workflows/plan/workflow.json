@@ -1,13 +1,16 @@
 {
-  "name": "Plan",
-  "description": "Turn a scoped ticket into a single plan.md: ground in the real code, settle open business decisions with the person, then write an implementation plan covering the trade-offs, the technologies needed and the tasks in enough detail to run to completion. No design.md. Writes no production code.",
+  "name": "Code Design Workflow",
+  "description": "Design how the code is organized to deliver the scope and the designs: the concepts and their names, the interfaces, where each thing lives and how it will change over time, as simple and intuitive as it can be, then the tasks to build it. Produces code-design.md. Writes no production code.",
   "agent": "software-engineer",
-  "model": "inherit",
+  "model": "opus",
   "permissions": "auto",
   "stages": [
-    { "name": "Understanding all the context so far", "file": "stages/1-understand-the-context.md" },
-    { "name": "Settle decisions", "file": "stages/2-settle-decisions.md" },
-    { "name": "Plan", "file": "stages/3-plan.md" },
-    { "name": "Hand off", "file": "stages/4-hand-off.md" }
+    {"name": "Ground in the code", "file": "stages/1-ground-in-the-code.md"},
+    {"name": "Model the concepts", "file": "stages/2-model-the-concepts.md"},
+    {"name": "Design the interfaces", "file": "stages/3-design-the-interfaces.md"},
+    {"name": "Shape the types, the structure and the values", "file": "stages/4-shape-the-types-the-structure-and-the-values.md"},
+    {"name": "Decide failure behavior and the proof", "file": "stages/5-decide-failure-behavior-and-the-proof.md"},
+    {"name": "Plan the tasks", "file": "stages/6-plan-the-tasks.md"},
+    {"name": "Write code-design.md", "file": "stages/7-write-code-design-md.md"}
   ]
 }

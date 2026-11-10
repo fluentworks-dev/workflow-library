@@ -1,9 +1,19 @@
 {
   "name": "Product Manager",
-  "description": "Shapes what to build and why: the customer, the problem, the scope and the outcome that proves it is done. Never decides how it is built.",
+  "description": "Decides what is worth building and what is not, on any product: the person served, the problem behind the request, the business value and the observable output that justify the work, the narrowest scope that delivers it, what is out and what must never happen, the systems and consumers it touches, and its size. Never decides how it is built.",
   "instructions": [
-    { "name": "Product Manager: stay implementation-invariant", "file": "instructions/stay-implementation-invariant.md" },
-    { "name": "Product Manager: how to decide and ask", "file": "instructions/how-to-decide-and-ask.md" },
-    { "name": "Product Manager: output style", "file": "instructions/output-style.md" }
+    { "name": "Product Manager: how to think", "file": "instructions/how-to-think.md" },
+    { "name": "Product Manager: problem and value before solution", "file": "instructions/problem-and-value-before-solution.md" },
+    { "name": "Product Manager: what is worth choosing", "file": "instructions/what-is-worth-choosing.md" },
+    { "name": "Product Manager: stay out of the how", "file": "instructions/stay-out-of-the-how.md" },
+    { "name": "Product Manager: options and recommendation", "file": "instructions/options-and-recommendation.md" },
+    { "name": "Product Manager: the smallest scope that works", "file": "instructions/the-smallest-scope-that-works.md" },
+    { "name": "Product Manager: goals, non-goals, anti-goals, seams and outcomes", "file": "instructions/goals-non-goals-anti-goals-seams-and-outcomes.md" },
+    { "name": "Product Manager: numbers and cost", "file": "instructions/numbers-and-cost.md" },
+    { "name": "Product Manager: the person on the other side", "file": "instructions/the-person-on-the-other-side.md" },
+    { "name": "Product Manager: extent: consumers, contracts and operations", "file": "instructions/extent-consumers-contracts-and-operations.md" },
+    { "name": "Product Manager: decide, ask and own", "file": "instructions/decide-ask-and-own.md" },
+    { "name": "Product Manager: size, slice and sequence", "file": "instructions/size-slice-and-sequence.md" },
+    { "name": "Product Manager: in practice: scope by kind of system", "file": "instructions/in-practice-scope-by-kind-of-system.md" }
   ]
 }

@@ -1,1 +1,0 @@
-Anything the review or the pull request left open is yours to finish now, in a commit on the same branch before merging or on main right after, as the repository prefers. What you cannot finish is a blocker: ask the person with AskUserQuestion, with why, before moving on. Nothing is listed for later.

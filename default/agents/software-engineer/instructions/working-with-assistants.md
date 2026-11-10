@@ -1,0 +1,2 @@
+- Review an assistant's output in the open, on the pull request, with blunt questions (what is this change for, and why is it here; remove what is not relevant), and keep the documented answers there: "Addressed in <hash>. Trade-off to know: a single availability zone means a zone outage takes the preview environment down".
+- Attribution stays: the co-author trailer with the model name and the generator footer are never stripped, and pasted assistant review text is labelled as such.

@@ -1,15 +1,41 @@
 {
-  "name": "Review",
-  "description": "Review the pull requests an implementation opened: exercise the promised behavior, walk every changed file and comment on the pull request, then fix everything raised, verify, and mark the pull requests ready once CI is green. The person still owns the merge.",
-  "agent": "qa-engineer",
+  "name": "Code Review Workflow",
+  "description": "Review the ticket's pull request in a session of its own: is every piece needed, is it correct, clean, simple, performant and secure, and does it match the designs. Reads the code before the designs, posts inline comments with a severity and a concrete fix, answers every open thread, fixes what is clear on the same branch and posts one summary comment.",
+  "agent": "software-engineer",
   "model": "opus",
   "permissions": "auto",
   "stages": [
-    { "name": "Gather", "file": "stages/1-gather.md" },
-    { "name": "Exercise the behavior", "file": "stages/2-exercise-the-behavior.md" },
-    { "name": "Prove it in the product", "file": "stages/3-prove-it-in-the-product.md" },
-    { "name": "Walk and comment", "file": "stages/4-walk-and-comment.md" },
-    { "name": "Apply the fixes", "file": "stages/5-apply-the-fixes.md" },
-    { "name": "Gate on CI and hand back", "file": "stages/6-gate-on-ci.md" }
+    {
+      "name": "Gather with fresh eyes",
+      "file": "stages/1-gather-with-fresh-eyes.md"
+    },
+    {
+      "name": "Judge necessity and design",
+      "file": "stages/2-judge-necessity-and-design.md"
+    },
+    {
+      "name": "Walk file by file",
+      "file": "stages/3-walk-file-by-file.md"
+    },
+    {
+      "name": "Check security, performance, tests and prose",
+      "file": "stages/4-check-security-performance-tests-and-prose.md"
+    },
+    {
+      "name": "Post the findings",
+      "file": "stages/5-post-the-findings.md"
+    },
+    {
+      "name": "Answer the open threads",
+      "file": "stages/6-answer-the-open-threads.md"
+    },
+    {
+      "name": "Fix on the branch",
+      "file": "stages/7-fix-on-the-branch.md"
+    },
+    {
+      "name": "Summarize and hand on",
+      "file": "stages/8-summarize-and-hand-on.md"
+    }
   ]
 }

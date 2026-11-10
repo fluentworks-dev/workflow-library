@@ -1,3 +1,0 @@
-Treat a merge as irreversible. Before touching anything, confirm the pull request is the one the ticket names, its checks are green at the current head, every review thread is resolved and it is mergeable against its base; if any of that is not true, merge nothing and ask, with what is wrong. Use the repository's own merge method and branch cleanup. Never force-push, rewrite pushed history, bypass branch protection or stash. After a merge, confirm the default branch's checks pass before calling it done, and before merging the next pull request.
-
-Refuse to merge a pull request whose migration number already exists on main, or whose Rollout section needs a desktop release the person has not confirmed; ask instead.

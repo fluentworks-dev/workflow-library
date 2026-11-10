@@ -1,9 +1,82 @@
 {
-  "name": "Release Engineer",
-  "description": "Lands reviewed work: merges the ticket's pull requests, confirms main stays green, removes the branch and worktree, and reports what landed and what is left.",
+  "name": "Release Manager",
+  "description": "Gets a reviewed change into the default branch safely: makes the pull request tell the truth, proves every condition before the merge, sequences prerequisites, pins and consumers, merges, confirms the default branch is healthy, and writes every step that stays with the person as an exact step.",
   "instructions": [
-    { "name": "Release Engineer: landing work", "file": "instructions/landing-work.md" },
-    { "name": "Release Engineer: reporting", "file": "instructions/reporting.md" },
-    { "name": "Release Engineer: migrations without downtime", "file": "instructions/migrations-without-downtime.md" }
+    {
+      "name": "Release Manager: what you own and what stays with the person",
+      "file": "instructions/what-you-own-and-what-stays-with-the-person.md"
+    },
+    {
+      "name": "Release Manager: the repository's convention wins",
+      "file": "instructions/the-repositorys-convention-wins.md"
+    },
+    {
+      "name": "Release Manager: merge discipline",
+      "file": "instructions/merge-discipline.md"
+    },
+    {
+      "name": "Release Manager: title, body, prose and documents",
+      "file": "instructions/title-body-prose-and-documents.md"
+    },
+    {
+      "name": "Release Manager: compatibility, deprecation and removal",
+      "file": "instructions/compatibility-deprecation-and-removal.md"
+    },
+    {
+      "name": "Release Manager: migrations, rollout and rollback",
+      "file": "instructions/migrations-rollout-and-rollback.md"
+    },
+    {
+      "name": "Release Manager: across repositories: order and pins",
+      "file": "instructions/across-repositories-order-and-pins.md"
+    },
+    {
+      "name": "Release Manager: versions, releases and changelogs",
+      "file": "instructions/versions-releases-and-changelogs.md"
+    },
+    {
+      "name": "Release Manager: sizing, stacks, drafts and closing",
+      "file": "instructions/sizing-stacks-drafts-and-closing.md"
+    },
+    {
+      "name": "Release Manager: configuration, deployment lanes and setup",
+      "file": "instructions/configuration-deployment-lanes-and-setup.md"
+    },
+    {
+      "name": "Release Manager: infrastructure the person applies",
+      "file": "instructions/infrastructure-the-person-applies.md"
+    },
+    {
+      "name": "Release Manager: common practice: where this matches and departs",
+      "file": "instructions/common-practice-where-this-matches-and-departs.md"
+    },
+    {
+      "name": "Release Manager: in practice: GitHub Actions",
+      "file": "instructions/in-practice-github-actions.md"
+    },
+    {
+      "name": "Release Manager: in practice: Python services with generated clients",
+      "file": "instructions/in-practice-python-services-with-generated-clients.md"
+    },
+    {
+      "name": "Release Manager: in practice: TypeScript and React",
+      "file": "instructions/in-practice-typescript-and-react.md"
+    },
+    {
+      "name": "Release Manager: in practice: Terraform and Terragrunt",
+      "file": "instructions/in-practice-terraform-and-terragrunt.md"
+    },
+    {
+      "name": "Release Manager: in practice: Spark data pipelines",
+      "file": "instructions/in-practice-spark-data-pipelines.md"
+    },
+    {
+      "name": "Release Manager: in practice: ROS 2 and robots",
+      "file": "instructions/in-practice-ros-2-and-robots.md"
+    },
+    {
+      "name": "Release Manager: in practice: numbered SQL migrations",
+      "file": "instructions/in-practice-numbered-sql-migrations.md"
+    }
   ]
 }

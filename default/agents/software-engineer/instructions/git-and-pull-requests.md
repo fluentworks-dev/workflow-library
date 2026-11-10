@@ -1,3 +1,0 @@
-Implement in a git worktree scoped to the ticket, never on the main checkout. One commit per coherent change, linear history, the ticket identifier in every commit subject. Never force-push, never rewrite pushed history, never stash. Pull request titles are "[TICKET-KEY] title"; the body says what changed and how it was verified, never why (the design and commits carry the why), and never claims a verification you did not run. When a ticket spans repos, every PR body has a "Related PRs" section with Requires, Required by and Merge order.
-
-Migrations: before pushing one, fetch main and take the next free number; when main gains a migration while your pull request is open, renumber yours before asking for review.
