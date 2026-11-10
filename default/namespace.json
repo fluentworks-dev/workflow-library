@@ -1,21 +1,31 @@
 {
   "name": "Default workflows",
-  "workflows": ["scoping", "design", "plan", "implement", "review", "functional-test", "merge"],
-  "rules": [],
+  "workflows": ["scoping", "design", "system-design", "plan", "software-design-review", "implement", "review", "functional-test", "merge"],
+  "rules": [
+    {"name": "How to decide", "file": "rules/how-to-decide.md", "appliesTo": "agents", "targets": ["product-manager", "ui-designer", "system-architect", "software-engineer", "qa-engineer", "release-engineer"]},
+    {"name": "When to ask", "file": "rules/when-to-ask.md", "appliesTo": "agents", "targets": ["product-manager", "ui-designer", "system-architect", "software-engineer", "qa-engineer", "release-engineer"]},
+    {"name": "Evidence over opinion", "file": "rules/evidence-over-opinion.md", "appliesTo": "agents", "targets": ["product-manager", "ui-designer", "system-architect", "software-engineer", "qa-engineer", "release-engineer"]},
+    {"name": "Writing", "file": "rules/writing.md", "appliesTo": "agents", "targets": ["product-manager", "ui-designer", "system-architect", "software-engineer", "qa-engineer", "release-engineer"]},
+    {"name": "What stays with the person", "file": "rules/what-stays-with-the-person.md", "appliesTo": "agents", "targets": ["product-manager", "ui-designer", "system-architect", "software-engineer", "qa-engineer", "release-engineer"]},
+    {"name": "Working discipline", "file": "rules/working-discipline.md", "appliesTo": "agents", "targets": ["product-manager", "ui-designer", "system-architect", "software-engineer", "qa-engineer", "release-engineer"]},
+    {"name": "Documents and hand-offs", "file": "rules/documents-and-hand-offs.md", "appliesTo": "workflows", "targets": ["scoping", "design", "system-design", "plan", "software-design-review", "implement", "review", "functional-test", "merge"]}
+  ],
   "templates": [
     {
       "key": "software-development",
       "name": "Software development",
-      "description": "From scope to merge: each column after Backlog runs one workflow.",
+      "description": "One ticket from idea to the default branch: scope, three designs, a design review, the build, a code review, validation by running it, and the merge.",
       "columns": [
-        { "name": "Backlog", "type": "backlog" },
-        { "name": "Scope", "type": "started", "workflow": "scoping" },
-        { "name": "UI design", "type": "started", "workflow": "design" },
-        { "name": "Plan", "type": "started", "workflow": "plan" },
-        { "name": "Implement", "type": "started", "workflow": "implement" },
-        { "name": "Code review", "type": "started", "workflow": "review" },
-        { "name": "Functional test", "type": "started", "workflow": "functional-test" },
-        { "name": "Merge", "type": "completed", "workflow": "merge" }
+        {"name": "Backlog", "type": "backlog"},
+        {"name": "Scope", "type": "unstarted", "workflow": "scoping"},
+        {"name": "Product Design", "type": "started", "workflow": "design"},
+        {"name": "System Design", "type": "started", "workflow": "system-design"},
+        {"name": "Code Design", "type": "started", "workflow": "plan"},
+        {"name": "Design Review", "type": "started", "workflow": "software-design-review"},
+        {"name": "Implement", "type": "started", "workflow": "implement"},
+        {"name": "Code Review", "type": "started", "workflow": "review"},
+        {"name": "Validate", "type": "started", "workflow": "functional-test"},
+        {"name": "Merge", "type": "completed", "workflow": "merge"}
       ]
     }
   ]

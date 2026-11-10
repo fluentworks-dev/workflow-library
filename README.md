@@ -1,9 +1,14 @@
 # Workflow library
 
-System-provided workflows, agents and rules for [Devel Central](https://develcentral.com).
+System-provided workflows, agents, rules and a board template for [fluentworks](https://fluentworks.dev).
 
-The workflows here are **external workflows**. A board column runs one in place: nothing is copied
-into the organization, and the column stays linked to this repository's `main` branch. A new native
+Every workspace made in fluentworks starts with its own copy of this library: when the workspace is
+set up, its library is cloned from `main` once, with every workflow, agent, rule and template, and
+from then on the workspace edits its copy. A copy never changes when this repository does.
+
+Workspaces made before that keep **Default workflows** as a read-only library of **external
+workflows**. A board column runs one in place: nothing is copied into the organization, and the
+column stays linked to this repository's `main` branch. A new native
 project picks a board template (see [Templates](#templates)), and each template column starts on its
 external workflow. Any column can also pick an external workflow from its **Workflow** menu, under
 **External: &lt;Template&gt;**.
@@ -23,10 +28,30 @@ unknown workflow.
 
 | Folder | Shown as | Workflows |
 | --- | --- | --- |
-| [`default/`](default/) | Default workflows | Scoping, Design, Plan, Implement, Review, Functional test, Merge |
+| [`default/`](default/) | Default workflows | Scoping, Product Design, System Design, Code Design, Software Design Review, Software Implementation, Code Review, Software Validation, Software Merge |
 
-Each top-level folder holding a `namespace.json` is a namespace in this layout. Devel Central reads
-only `default/` today; a new namespace folder does not appear in the app yet.
+Each top-level folder holding a `namespace.json` is a namespace in this layout. fluentworks reads
+only `default/` as Default workflows; a member can import any other folder on GitHub as a library of
+its own.
+
+The nine workflows run one ticket from idea to the default branch, one per column of the Software
+development template. Each workflow's key and agent:
+
+| Workflow | Key | Agent |
+| --- | --- | --- |
+| Scoping Workflow | `scoping` | Product Manager (`product-manager`) |
+| Product Design Workflow | `design` | Product Designer (`ui-designer`) |
+| System Design Workflow | `system-design` | System Architect (`system-architect`) |
+| Code Design Workflow | `plan` | Coding Agent (`software-engineer`) |
+| Software Design Review Workflow | `software-design-review` | System Architect (`system-architect`) |
+| Software Implementation Workflow | `implement` | Coding Agent (`software-engineer`) |
+| Code Review Workflow | `review` | Coding Agent (`software-engineer`) |
+| Software Validation Workflow | `functional-test` | Software Test Engineer (`qa-engineer`) |
+| Software Merge Workflow | `merge` | Release Manager (`release-engineer`) |
+
+Keys are stored in boards and sessions, so they stay when a workflow's name or content changes: a
+column that ran `plan` before runs Code Design Workflow now. Six rules apply to every agent and
+Documents and hand-offs to every workflow.
 
 ## Layout
 
@@ -133,11 +158,12 @@ A rule is Markdown in `rules/`, listed in `namespace.json` with the workflows or
 | `appliesTo` | yes | `workflows` or `agents`. |
 | `targets` | yes | Workflow keys or agent keys of this namespace. |
 
-A rule is copied with any workflow or agent it targets when that workflow is duplicated, and targets
-only the copies made by that duplicate. The copy belongs to the member who made it, like any rule
-they write. Rules here do not apply to sessions running the external workflow itself; only the
-organization's own rules that apply to every session do. Organization-wide rules are not part of a
-library.
+Sessions that run a workflow or agent a rule targets get the rule, in a copy of this library and in
+the read-only Default workflows alike. Cloning the library copies every rule onto the clone's Rules
+tab, aimed at the cloned workflows and agents. Duplicating one workflow brings the rules that target
+it or its agent onto the organization library's Rules tab, aimed at the copies; a later duplicate
+adds its copies to the rule an earlier one brought. Global rules, which apply to every session, are
+not part of a library.
 
 ### Templates
 
@@ -168,4 +194,21 @@ A template needs at least one `backlog` or `unstarted` column and one `completed
    column's Workflow menu.
 
 If any file is missing or does not follow this layout, the app says external workflows can't be
-reached, so check the JSON and every `file` path before merging.
+reached and new workspaces cannot be set up, so run the check below before merging.
+
+## Before you merge
+
+Merging to `main` changes two things at once: what every existing workspace's Default workflows
+runs, within about five minutes, and what every workspace set up afterwards copies. Check the
+branch first, from a fluentworks checkout:
+
+```
+npm run library:check -- <path to this repository>/default
+```
+
+It loads the folder the way workspace setup reads it and refuses what setup would refuse: a layout
+error, more than 500 files or 2 MiB, more rows than one clone writes, an unknown effort, or Auto on a
+model that cannot run it. On success it prints one line with the counts, for example
+`Default workflows: 9 workflows, 6 agents, 7 rules, 1 template (10 columns); 174 files, 680 KiB; 218 rows of 1000`.
+
+Keep every workflow and agent key that exists on `main`: boards, sessions and copies name them.
